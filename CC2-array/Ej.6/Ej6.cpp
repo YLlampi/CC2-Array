@@ -2,7 +2,13 @@
 using namespace std;
 
 string copiar(string a,string b){
-	int as = size(b);
+	
+	int as;
+	if(size(a)>size(b)){
+		as = size(b);
+	}
+	else as = size(a);
+	
 	for(int i=0;i<as;i++){
 		b[i]=a[i];
 	}
@@ -19,4 +25,6 @@ int main(){
 	cout<<sda<<'\n';
 	return 0;
 }
+
+
 
